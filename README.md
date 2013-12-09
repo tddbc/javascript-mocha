@@ -10,19 +10,19 @@
 
 ### セットアップ
 
-1. プロジェクトをcloneしてください。
+* プロジェクトをcloneしてください。
 
 ```sh
 $ git clone https://github.com/tddbc/javascript-mocha.git
 ```
 
-2. npmを利用して、依存関係をダウンロードしてください。
+* npmを利用して、依存関係をダウンロードしてください。
 
 ```sh
 $ npm install
 ```
 
-3. 下記の様に表示されるか、確認してください。
+* 下記の様に表示されるか、確認してください。
 
 ```sh
 $ grunt test
