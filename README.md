@@ -10,19 +10,25 @@
 
 ### セットアップ
 
-* プロジェクトをcloneしてください。
+* まずはじめに、プロジェクトをcloneしてください。
 
 ```sh
 $ git clone https://github.com/tddbc/javascript-mocha.git
 ```
 
-* npmを利用して、依存関係をダウンロードしてください。
+* 次に、[Grunt](http://gruntjs.com/)をインストールしてください。
+
+```sh
+$ npm install -g grunt-cli
+```
+
+* 次に、依存関係をダウンロードしてください。
 
 ```sh
 $ npm install
 ```
 
-* 下記の様に表示されるか、確認してください。
+* 最後に、下記の様に表示されるか、確認してください。
 
 ```sh
 $ grunt test
