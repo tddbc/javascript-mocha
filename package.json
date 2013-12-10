@@ -33,7 +33,7 @@
         "grunt-contrib-clean": "~0.5.0",
         "grunt-mocha-cli": "~1.4.0",
         "power-assert": "~0.2.2",
-        "grunt-espower": "~0.2.1"
+        "espower-loader": "~0.1.1"
     },
     "keywords": [
         "TDDBC"
