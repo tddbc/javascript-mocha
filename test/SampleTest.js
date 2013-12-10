@@ -11,7 +11,7 @@ describe('Sample', function () {
 
     describe('.status', function () {
         it('は、trueであるべき', function () {
-            assert.ok(sut.status == true);
+            assert.ok(sut.status === true);
         });
     });
 

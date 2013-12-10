@@ -3,30 +3,13 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-        destDir: 'espowered',
-
         mochacli: {
             options: {
                 ui: 'bdd',
-                reporter: 'spec'
+                reporter: 'spec',
+                require: [ './test/espower_loader_helper.js' ]
             },
-            all: ['<%= destDir %>/*.js']
-        },
-        espower: {
-            test: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'test/',
-                        src: ['**/*.js'],
-                        dest: '<%= destDir %>/',
-                        ext: '.js'
-                    }
-                ]
-            }
-        },
-        clean: {
-            test: ['<%= destDir %>/']
+            all: ['test/*Test.js']
         },
         jshint: {
             options: {
@@ -60,12 +43,10 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.loadNpmTasks('grunt-espower');
     grunt.loadNpmTasks('grunt-mocha-cli');
 
-    grunt.registerTask('test', ['clean', 'espower:test', 'mochacli']);
+    grunt.registerTask('test', ['mochacli']);
 
     // Default task.
     grunt.registerTask('default', ['test']);
