@@ -7,7 +7,7 @@ module.exports = function (grunt) {
             options: {
                 ui: 'bdd',
                 reporter: 'spec',
-                require: [ './test/espower_loader_helper.js' ]
+                require: [ 'espower_loader_helper.js' ]
             },
             all: ['test/*Test.js']
         },
