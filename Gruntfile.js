@@ -32,7 +32,7 @@ module.exports = function (grunt) {
             },
             lib: {
                 files: '<%= jshint.lib.src %>',
-                tasks: ['jshint:lib']
+                tasks: ['jshint:lib', 'test']
             },
             test: {
                 files: '<%= jshint.test.src %>',
@@ -43,7 +43,6 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
     grunt.loadNpmTasks('grunt-mocha-cli');
 
     grunt.registerTask('test', ['mochacli']);
