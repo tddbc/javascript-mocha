@@ -32,18 +32,14 @@ $ npm install
 
 ```sh
 $ grunt test
-Running "clean:test" (clean) task
-
-Running "espower:test" (espower) task
-
 Running "mochacli:all" (mochacli) task
 
 
   Sample
     .status
-      ✓ は、trueであるべき
+      ✓ は、trueであるべき 
     #say()
-      ✓ は、'Hello TDDBC!'が返ってくるべき
+      ✓ は、'Hello TDDBC!'が返ってくるべき 
 
 
   2 passing (8ms)
