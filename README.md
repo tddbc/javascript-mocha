@@ -6,7 +6,7 @@
 
 ### 動作環境
 
-* Node.js : 0.8.0以上
+* Node.js : 0.10.0以上
 
 ### セットアップ
 
@@ -32,18 +32,14 @@ $ npm install
 
 ```sh
 $ grunt test
-Running "clean:test" (clean) task
-
-Running "espower:test" (espower) task
-
 Running "mochacli:all" (mochacli) task
 
 
   Sample
     .status
-      ✓ は、trueであるべき
+      ✓ は、trueであるべき 
     #say()
-      ✓ は、'Hello TDDBC!'が返ってくるべき
+      ✓ は、'Hello TDDBC!'が返ってくるべき 
 
 
   2 passing (8ms)
