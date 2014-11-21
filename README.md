@@ -16,12 +16,6 @@
 $ git clone https://github.com/tddbc/javascript-mocha.git
 ```
 
-* 次に、[Grunt](http://gruntjs.com/)をインストールしてください。
-
-```sh
-$ npm install -g grunt-cli
-```
-
 * 次に、依存関係をダウンロードしてください。
 
 ```sh
@@ -31,22 +25,36 @@ $ npm install
 * 最後に、下記の様に表示されるか、確認してください。
 
 ```sh
-$ grunt test
-Running "mochacli:all" (mochacli) task
+$ npm test
+
+> javascript-mocha@0.1.0 test /path/to/projects/javascript-mocha
+> npm run lint && mocha --require intelli-espower-loader
+
+
+> javascript-mocha@0.1.0 lint /path/to/projects/javascript-mocha
+> jshint lib test
+
 
 
   Sample
     .status
-      ✓ は、trueであるべき 
+      ✓ は、trueであるべき
     #say()
-      ✓ は、'Hello TDDBC!'が返ってくるべき 
+      ✓ は、'Hello TDDBC!'が返ってくるべき
 
 
-  2 passing (8ms)
+  2 passing (5ms)
 
-
-Done, without errors.
+$ 
 ```
+
+### コマンド
+
+| コマンド        | 内容                                                       |
+|:----------------|:-----------------------------------------------------------|
+| `npm test`      | lint とテストをまとめて行います                            |
+| `npm run lint`  | コードの静的検証を行います                                 |
+| `npm run watch` | ファイル変更を監視し、変更があったらテストを自動で行います |
 
 ## License
 Copyright (c) 2013 TDD BaseCamp and other contributors

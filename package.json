@@ -1,41 +1,42 @@
 {
-    "name": "javascript-mocha",
-    "description": "skeleton for Node.js users.",
-    "version": "0.1.0",
-    "homepage": "https://github.com/tddbc/javascript-mocha",
-    "author": {
-        "name": "TDD BaseCamp and other contributors"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/tddbc/javascript-mocha.git"
-    },
-    "bugs": {
-        "url": "https://github.com/tddbc/javascript-mocha/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/tddbc/javascript-mocha/blob/master/LICENSE-MIT"
-        }
-    ],
-    "main": "lib/sample.js",
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.2",
-        "grunt-contrib-jshint": "~0.10.0",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-contrib-clean": "~0.5.0",
-        "grunt-mocha-cli": "~1.8.0",
-        "power-assert": "~0.7.2",
-        "espower-loader": "~0.7.0"
-    },
-    "keywords": [
-        "TDDBC"
-    ]
+  "name": "javascript-mocha",
+  "description": "skeleton for Node.js users.",
+  "version": "0.1.0",
+  "author": {
+    "name": "TDD BaseCamp and other contributors"
+  },
+  "bugs": {
+    "url": "https://github.com/tddbc/javascript-mocha/issues"
+  },
+  "devDependencies": {
+    "espower-loader": "^0.10.0",
+    "intelli-espower-loader": "^0.5.0",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "power-assert": "^0.10.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "homepage": "https://github.com/tddbc/javascript-mocha",
+  "keywords": [
+    "TDDBC"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tddbc/javascript-mocha/blob/master/LICENSE-MIT"
+  },
+  "main": "lib/sample.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tddbc/javascript-mocha.git"
+  },
+  "scripts": {
+    "lint": "jshint lib test",
+    "test": "npm run lint && mocha --require intelli-espower-loader",
+    "watch": "mocha --require intelli-espower-loader --watch"
+  }
 }

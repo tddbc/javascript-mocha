@@ -1,6 +1,8 @@
+'use strict';
+
 var assert = require('power-assert');
 
-var Sample = require('../lib/sample.js');
+var Sample = require('../lib/sample');
 
 describe('Sample', function () {
     var sut;
