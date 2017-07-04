@@ -35,7 +35,8 @@
     "url": "git://github.com/tddbc/javascript-mocha.git"
   },
   "scripts": {
-    "pretest": "eslint 'lib/**' 'test/**'",
+    "lint": "eslint 'lib/**' 'test/**'",
+    "pretest": "npm run lint",
     "test": "mocha --require intelli-espower-loader",
     "watch": "mocha --require intelli-espower-loader --watch"
   }
