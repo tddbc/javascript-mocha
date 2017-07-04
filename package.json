@@ -12,7 +12,6 @@
     "eslint": "^4.1.1",
     "espower-loader": "^1.0.0",
     "intelli-espower-loader": "^1.0.1",
-    "jshint": "^2.9.1",
     "mocha": "^2.4.5",
     "power-assert": "^1.2.0"
   },
@@ -36,7 +35,6 @@
     "url": "git://github.com/tddbc/javascript-mocha.git"
   },
   "scripts": {
-    "lint": "jshint lib test",
     "pretest": "eslint 'lib/**' 'test/**'",
     "test": "mocha --require intelli-espower-loader",
     "watch": "mocha --require intelli-espower-loader --watch"
