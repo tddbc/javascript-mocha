@@ -9,6 +9,7 @@
     "url": "https://github.com/tddbc/javascript-mocha/issues"
   },
   "devDependencies": {
+    "eslint": "^4.1.1",
     "espower-loader": "^1.0.0",
     "intelli-espower-loader": "^1.0.1",
     "jshint": "^2.9.1",
@@ -36,7 +37,8 @@
   },
   "scripts": {
     "lint": "jshint lib test",
-    "test": "npm run lint && mocha --require intelli-espower-loader",
+    "pretest": "eslint 'lib/**' 'test/**'",
+    "test": "mocha --require intelli-espower-loader",
     "watch": "mocha --require intelli-espower-loader --watch"
   }
 }
