@@ -6,7 +6,7 @@
 
 ### 動作環境
 
-* Node.js : 0.10.0以上
+* Node.js : 4以上
 
 ### セットアップ
 
@@ -27,12 +27,16 @@ $ npm install
 ```sh
 $ npm test
 
-> javascript-mocha@0.1.0 test /path/to/projects/javascript-mocha
-> npm run lint && mocha --require intelli-espower-loader
+> javascript-mocha@0.1.0 pretest /path/to/projects/javascript-mocha
+> npm run lint
 
 
 > javascript-mocha@0.1.0 lint /path/to/projects/javascript-mocha
-> jshint lib test
+> eslint 'lib/**' 'test/**'
+
+
+> javascript-mocha@0.1.0 test /path/to/projects/javascript-mocha
+> mocha --require intelli-espower-loader
 
 
 
@@ -40,10 +44,10 @@ $ npm test
     .status
       ✓ は、trueであるべき
     #say()
-      ✓ は、'Hello TDDBC!'が返ってくるべき
+      ✓ は、"Hello TDDBC!"が返ってくるべき
 
 
-  2 passing (5ms)
+  2 passing (9ms)
 
 $ 
 ```

@@ -1,6 +1,4 @@
-'use strict';
-
-var assert = require('power-assert');
+var assert = require('assert');
 
 var Sample = require('../lib/sample');
 
@@ -18,7 +16,7 @@ describe('Sample', function () {
     });
 
     describe('#say()', function () {
-        it("は、'Hello TDDBC!'が返ってくるべき", function () {
+        it('は、"Hello TDDBC!"が返ってくるべき', function () {
             assert(sut.say() === 'Hello TDDBC!');
         });
     });
