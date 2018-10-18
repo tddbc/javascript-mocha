@@ -1,23 +1,23 @@
-var assert = require('assert');
+const assert = require('assert');
 
-var Sample = require('../lib/sample');
+const Sample = require('../lib/sample');
 
-describe('Sample', function () {
-    var sut;
+describe('Sample', () => {
+  let sut;
 
-    beforeEach(function () {
-        sut = new Sample();
+  beforeEach(() => {
+    sut = new Sample();
+  });
+
+  describe('.status', () => {
+    it('は、trueであるべき', () => {
+      assert.ok(sut.status === true);
     });
+  });
 
-    describe('.status', function () {
-        it('は、trueであるべき', function () {
-            assert.ok(sut.status === true);
-        });
+  describe('#say()', () => {
+    it('は、"Hello TDDBC!"が返ってくるべき', () => {
+      assert(sut.say() === 'Hello TDDBC!');
     });
-
-    describe('#say()', function () {
-        it('は、"Hello TDDBC!"が返ってくるべき', function () {
-            assert(sut.say() === 'Hello TDDBC!');
-        });
-    });
+  });
 });
