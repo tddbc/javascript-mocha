@@ -12,7 +12,7 @@
     "eslint": "^5.0.1",
     "espower-loader": "^1.2.2",
     "intelli-espower-loader": "^1.0.1",
-    "lodash": ">=4.17.11",
+    "lodash": ">=4.17.13",
     "mocha": "^5.2.0",
     "power-assert": "^1.6.0"
   },
