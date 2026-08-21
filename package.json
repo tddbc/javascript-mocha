@@ -9,7 +9,7 @@
     "url": "https://github.com/tddbc/javascript-mocha/issues"
   },
   "devDependencies": {
-    "eslint": "^5.0.1",
+    "eslint": "^10.8.1",
     "espower-loader": "^1.2.2",
     "intelli-espower-loader": "^1.0.1",
     "lodash": ">=4.17.21",
